@@ -64,15 +64,15 @@ export default function BusinessArms() {
           {/* Tribex Capital Card */}
           <Card className="bg-card border border-border hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-8">
-              <div className="w-16 h-16 bg-green-500/10 rounded-lg flex items-center justify-center mb-6">
-                <Rocket className="h-8 w-8 text-green-500" />
+              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
+                <Rocket className="h-8 w-8 text-accent" />
               </div>
               <h3 className="text-2xl font-semibold text-card-foreground mb-4">Tribex Capital</h3>
               <p className="text-muted-foreground mb-6">
                 Strategic venture capital investments in promising startups across technology, 
                 fintech, and innovative business models. Launching soon.
               </p>
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-500/20 text-green-500 font-medium">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-accent/20 text-accent font-medium">
                 Coming Soon
               </div>
             </CardContent>

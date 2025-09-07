@@ -7,7 +7,7 @@ export default function TribexCapital() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-flex items-center px-4 py-2 bg-green-500/20 text-green-500 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">
               <Clock className="mr-2 h-4 w-4" />
               Coming Soon
             </div>
@@ -19,7 +19,7 @@ export default function TribexCapital() {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 mr-4">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1 mr-4">
                   <Star className="h-3 w-3 text-white" />
                 </div>
                 <div>
@@ -29,7 +29,7 @@ export default function TribexCapital() {
               </div>
               
               <div className="flex items-start">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 mr-4">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1 mr-4">
                   <Star className="h-3 w-3 text-white" />
                 </div>
                 <div>
@@ -39,7 +39,7 @@ export default function TribexCapital() {
               </div>
               
               <div className="flex items-start">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 mr-4">
+                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1 mr-4">
                   <Star className="h-3 w-3 text-white" />
                 </div>
                 <div>
@@ -51,7 +51,7 @@ export default function TribexCapital() {
             
             <div className="mt-8">
               <Button 
-                className="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
+                className="bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
                 data-testid="button-notify-launch"
               >
                 Get Notified at Launch
@@ -61,8 +61,8 @@ export default function TribexCapital() {
           
           <div className="bg-card border border-border rounded-xl p-6 shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Modern startup office with entrepreneurs collaborating on innovative projects" 
+              src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              alt="Indian startup ecosystem with modern entrepreneurs working on innovative technology projects" 
               className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
