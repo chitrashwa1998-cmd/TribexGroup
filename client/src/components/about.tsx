@@ -59,7 +59,7 @@ export default function About() {
                   <span className="text-4xl font-bold text-white">CR</span>
                 </div>
                 <h4 className="text-2xl font-semibold text-card-foreground mb-2">Chitrashwa R</h4>
-                <p className="text-lg text-primary mb-2 font-medium">Founder</p>
+                <p className="text-lg text-primary mb-2 font-medium">Founder and CEO</p>
                 <p className="text-muted-foreground max-w-md mx-auto">
                   Visionary leader driving financial innovation through advanced technology and strategic investments
                 </p>
