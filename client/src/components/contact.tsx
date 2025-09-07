@@ -63,7 +63,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Address</h4>
-                  <p className="text-muted-foreground">123 Financial District, Mumbai, Maharashtra 400001</p>
+                  <p className="text-muted-foreground">826/3 MEI layout Bangalore 560073</p>
                 </div>
               </div>
               
@@ -73,7 +73,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Phone</h4>
-                  <p className="text-muted-foreground">+91 22 1234 5678</p>
+                  <p className="text-muted-foreground">+91 7892002478</p>
                 </div>
               </div>
               
@@ -83,7 +83,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <p className="text-muted-foreground">info@tribexgroup.com</p>
+                  <p className="text-muted-foreground">chitrashwa1998@gmail.com</p>
                 </div>
               </div>
             </div>
