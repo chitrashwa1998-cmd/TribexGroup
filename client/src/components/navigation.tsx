@@ -58,19 +58,19 @@ export default function Navigation() {
           <div className="flex items-center justify-center">
             <button
               onClick={() => scrollToSection("home")}
-              className="flex items-center space-x-3 group"
+              className="group"
               data-testid="logo-button"
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                <span className="text-2xl font-bold text-white">T</span>
-              </div>
-              <div className="flex flex-col items-start">
-                <span className="text-2xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
-                  TRIBEX
-                </span>
-                <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
-                  GROUP
-                </span>
+              <div className="text-center">
+                <div className="text-3xl font-bold tracking-tight group-hover:scale-105 transition-transform duration-300">
+                  <span className="text-primary">T</span>
+                  <span className="text-foreground">ribe</span>
+                  <span className="text-accent">X</span>
+                  <span className="text-muted-foreground mx-2">•</span>
+                  <span className="text-primary">G</span>
+                  <span className="text-foreground">roup</span>
+                </div>
+                <div className="h-0.5 bg-gradient-to-r from-primary via-accent to-primary mt-1 opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </button>
           </div>
