@@ -39,25 +39,49 @@ export default function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-2xl font-bold text-primary"
-              data-testid="logo-button"
-            >
-              <span className="text-accent">T</span>ribex
-            </button>
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
+        <div className="flex items-center justify-center h-20 relative">
+          {/* Desktop Navigation - Left Side */}
+          <div className="hidden md:flex items-center space-x-8 absolute left-0">
+            {navItems.slice(0, 3).map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary transition-colors duration-200"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                data-testid={`nav-${item.id}`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Centered Logo */}
+          <div className="flex items-center justify-center">
+            <button
+              onClick={() => scrollToSection("home")}
+              className="flex items-center space-x-3 group"
+              data-testid="logo-button"
+            >
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                <span className="text-2xl font-bold text-white">T</span>
+              </div>
+              <div className="flex flex-col items-start">
+                <span className="text-2xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                  TRIBEX
+                </span>
+                <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                  GROUP
+                </span>
+              </div>
+            </button>
+          </div>
+
+          {/* Desktop Navigation - Right Side */}
+          <div className="hidden md:flex items-center space-x-8 absolute right-0">
+            {navItems.slice(3).map((item) => (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
                 data-testid={`nav-${item.id}`}
               >
                 {item.label}
@@ -66,7 +90,7 @@ export default function Navigation() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden absolute right-0">
             <Button
               variant="ghost"
               size="icon"
