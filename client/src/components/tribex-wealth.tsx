@@ -8,8 +8,8 @@ export default function TribexWealth() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="bg-card border border-border rounded-xl p-6 shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1554774853-719586f82d77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Modern luxury office space representing wealth management services" 
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              alt="Modern Indian financial district representing wealth management services" 
               className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
