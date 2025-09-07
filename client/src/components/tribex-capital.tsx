@@ -24,7 +24,7 @@ export default function TribexCapital() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">Early Stage Investment</h4>
-                  <p className="text-muted-foreground">Strategic investments in seed and Series A rounds for high-potential startups.</p>
+                  <p className="text-muted-foreground">Strategic investments in pre-seed and seed rounds for high-potential startups at initial stages.</p>
                 </div>
               </div>
               
@@ -61,8 +61,8 @@ export default function TribexCapital() {
           
           <div className="bg-card border border-border rounded-xl p-6 shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
-              alt="Indian startup ecosystem with modern entrepreneurs working on innovative technology projects" 
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              alt="Indian tech entrepreneurs collaborating on innovative startup projects" 
               className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
