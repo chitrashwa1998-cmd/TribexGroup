@@ -70,16 +70,11 @@ export default function BusinessArms() {
               <h3 className="text-2xl font-semibold text-card-foreground mb-4">Tribex Capital</h3>
               <p className="text-muted-foreground mb-6">
                 Strategic venture capital investments in promising startups across technology, 
-                fintech, and innovative business models.
+                fintech, and innovative business models. Launching soon.
               </p>
-              <Button
-                variant="ghost"
-                onClick={() => scrollToSection("capital")}
-                className="text-primary font-semibold hover:underline p-0 h-auto"
-                data-testid="button-view-portfolio"
-              >
-                View Portfolio <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-green-500/20 text-green-500 font-medium">
+                Coming Soon
+              </div>
             </CardContent>
           </Card>
         </div>

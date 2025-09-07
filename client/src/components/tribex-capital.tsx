@@ -1,6 +1,5 @@
-import { Sprout } from "lucide-react";
+import { Sprout, Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 
 export default function TribexCapital() {
   return (
@@ -9,58 +8,53 @@ export default function TribexCapital() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center px-4 py-2 bg-green-500/20 text-green-500 rounded-full text-sm font-medium mb-6">
-              <Sprout className="mr-2 h-4 w-4" />
-              Venture Capital
+              <Clock className="mr-2 h-4 w-4" />
+              Coming Soon
             </div>
             <h2 className="text-4xl font-bold text-foreground mb-6">Tribex Capital</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Our venture capital arm focuses on identifying and nurturing promising startups across 
+              Our venture capital division will focus on identifying and nurturing promising startups across 
               technology, fintech, and innovative business models with high growth potential.
             </p>
             
-            <div className="grid sm:grid-cols-2 gap-6">
-              <Card className="bg-card border border-border">
-                <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-green-500 mb-2">₹50Cr+</div>
-                  <div className="text-sm text-muted-foreground">Assets Under Management</div>
-                </CardContent>
-              </Card>
+            <div className="space-y-6">
+              <div className="flex items-start">
+                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 mr-4">
+                  <Star className="h-3 w-3 text-white" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Early Stage Investment</h4>
+                  <p className="text-muted-foreground">Strategic investments in seed and Series A rounds for high-potential startups.</p>
+                </div>
+              </div>
               
-              <Card className="bg-card border border-border">
-                <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-green-500 mb-2">25+</div>
-                  <div className="text-sm text-muted-foreground">Portfolio Companies</div>
-                </CardContent>
-              </Card>
+              <div className="flex items-start">
+                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 mr-4">
+                  <Star className="h-3 w-3 text-white" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Sector Focus</h4>
+                  <p className="text-muted-foreground">Targeting fintech, AI, blockchain, and innovative technology solutions.</p>
+                </div>
+              </div>
               
-              <Card className="bg-card border border-border">
-                <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-green-500 mb-2">3x</div>
-                  <div className="text-sm text-muted-foreground">Average Return Multiple</div>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-card border border-border">
-                <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-green-500 mb-2">5</div>
-                  <div className="text-sm text-muted-foreground">Successful Exits</div>
-                </CardContent>
-              </Card>
+              <div className="flex items-start">
+                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-1 mr-4">
+                  <Star className="h-3 w-3 text-white" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground mb-2">Value-Added Support</h4>
+                  <p className="text-muted-foreground">Mentorship, networking, and strategic guidance for portfolio companies.</p>
+                </div>
+              </div>
             </div>
             
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8">
               <Button 
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-                data-testid="button-view-portfolio"
+                className="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
+                data-testid="button-notify-launch"
               >
-                View Portfolio
-              </Button>
-              <Button 
-                variant="outline"
-                className="border border-border text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors"
-                data-testid="button-submit-pitch"
-              >
-                Submit Pitch Deck
+                Get Notified at Launch
               </Button>
             </div>
           </div>
