@@ -9,7 +9,7 @@ export default function TribexCapital() {
           <div>
             <div className="inline-flex items-center px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">
               <Clock className="mr-2 h-4 w-4" />
-              Coming Soon
+              Upcoming
             </div>
             <h2 className="text-4xl font-bold text-foreground mb-6">Tribex Capital</h2>
             <p className="text-xl text-muted-foreground mb-8">
