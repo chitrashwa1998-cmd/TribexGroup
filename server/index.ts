@@ -1,32 +1,19 @@
-import { createServer } from 'vite';
+import express from 'express';
 import path from 'path';
 
-async function startServer() {
-  try {
-    const server = await createServer({
-      configFile: path.resolve(process.cwd(), 'vite.config.ts'),
-      server: {
-        host: '0.0.0.0',
-        port: 5000,
-        strictPort: true,
-        hmr: {
-          clientPort: 5000,
-        },
-        allowedHosts: [
-          '.replit.dev',
-          '.repl.co',
-        ],
-      },
-    });
+const app = express();
+const PORT = 5000;
 
-    await server.listen();
-    
-    console.log('\n✅ Vite server started successfully!');
-    server.printUrls();
-  } catch (error) {
-    console.error('Failed to start Vite server:', error);
-    process.exit(1);
-  }
-}
+const publicDir = path.resolve(process.cwd(), 'dist/public');
 
-startServer();
+app.use(express.static(publicDir));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(publicDir, 'index.html'));
+});
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log('\n✅ TribeX Group website is running!');
+  console.log(`   Local:   http://localhost:${PORT}/`);
+  console.log(`   Network: http://0.0.0.0:${PORT}/\n`);
+});
