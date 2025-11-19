@@ -12,6 +12,10 @@ async function startServer() {
         hmr: {
           clientPort: 5000,
         },
+        allowedHosts: [
+          '.replit.dev',
+          '.repl.co',
+        ],
       },
     });
 
