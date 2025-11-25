@@ -73,11 +73,11 @@ export default function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection("wealth")}
+                  onClick={() => scrollToSection("media")}
                   className="text-muted-foreground hover:text-primary transition-colors"
-                  data-testid="footer-tribex-wealth"
+                  data-testid="footer-tribex-media"
                 >
-                  Tribex Wealth
+                  Tribex Media
                 </button>
               </li>
               <li>

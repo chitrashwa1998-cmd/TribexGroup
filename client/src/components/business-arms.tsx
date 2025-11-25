@@ -44,19 +44,19 @@ export default function BusinessArms() {
             </CardContent>
           </Card>
 
-          {/* Tribex Wealth Card */}
+          {/* Tribex Media Card */}
           <Card className="bg-card border border-border hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
                 <Coins className="h-8 w-8 text-accent" />
               </div>
-              <h3 className="text-2xl font-semibold text-card-foreground mb-4">Tribex Wealth</h3>
+              <h3 className="text-2xl font-semibold text-card-foreground mb-4">Tribex Media</h3>
               <p className="text-muted-foreground mb-6">
-                Comprehensive asset management services designed for sophisticated investors. 
-                Launching soon with cutting-edge portfolio strategies.
+                Professional content creation, digital marketing, and brand storytelling services 
+                for businesses looking to enhance their digital presence.
               </p>
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-accent/20 text-accent font-medium">
-                Coming Soon
+                Upcoming
               </div>
             </CardContent>
           </Card>

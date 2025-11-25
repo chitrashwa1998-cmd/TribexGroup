@@ -26,7 +26,7 @@ export default function Navigation() {
   const navItems = [
     { label: "Home", id: "home" },
     { label: "Tribex Alpha", id: "alpha" },
-    { label: "Tribex Wealth", id: "wealth" },
+    { label: "Tribex Media", id: "media" },
     { label: "Tribex Capital", id: "capital" },
     { label: "About", id: "about" },
     { label: "Contact", id: "contact" },

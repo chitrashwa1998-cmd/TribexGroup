@@ -1,15 +1,15 @@
 import { Clock, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function TribexWealth() {
+export default function TribexMedia() {
   return (
-    <section id="wealth" className="py-20 bg-background">
+    <section id="media" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="bg-card border border-border rounded-xl p-6 shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
-              alt="Modern Indian financial district representing wealth management services" 
+              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              alt="Modern media and content creation workspace" 
               className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
@@ -19,10 +19,10 @@ export default function TribexWealth() {
               <Clock className="mr-2 h-4 w-4" />
               Upcoming
             </div>
-            <h2 className="text-4xl font-bold text-foreground mb-6">Tribex Wealth</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-6">Tribex Media</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Our wealth management division will offer sophisticated portfolio management and investment 
-              advisory services for high-net-worth individuals and institutional clients.
+              Our media division will deliver cutting-edge content creation, digital marketing, and brand storytelling 
+              services for businesses looking to amplify their presence in the digital landscape.
             </p>
             
             <div className="space-y-6">
@@ -31,8 +31,8 @@ export default function TribexWealth() {
                   <Star className="h-3 w-3 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Portfolio Management</h4>
-                  <p className="text-muted-foreground">Customized investment strategies tailored to individual risk profiles and objectives.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Content Creation</h4>
+                  <p className="text-muted-foreground">High-quality video, photography, and multimedia content tailored to your brand identity.</p>
                 </div>
               </div>
               
@@ -41,8 +41,8 @@ export default function TribexWealth() {
                   <Star className="h-3 w-3 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Alternative Investments</h4>
-                  <p className="text-muted-foreground">Access to exclusive investment opportunities in private markets and alternative assets.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Digital Marketing</h4>
+                  <p className="text-muted-foreground">Strategic campaigns across social media, SEO, and digital advertising platforms.</p>
                 </div>
               </div>
               
@@ -51,8 +51,8 @@ export default function TribexWealth() {
                   <Star className="h-3 w-3 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Family Office Services</h4>
-                  <p className="text-muted-foreground">Comprehensive wealth planning, tax optimization, and legacy management solutions.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Brand Strategy</h4>
+                  <p className="text-muted-foreground">Comprehensive brand development and storytelling to connect with your target audience.</p>
                 </div>
               </div>
             </div>
