@@ -17,8 +17,8 @@ export default function Hero() {
             <span className="block text-accent">Redefined</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Tribex Group pioneers advanced financial technologies, algorithmic trading, and strategic investments 
-            across three specialized divisions.
+            Tribex Group pioneers innovation across finance, media, and technology through three specialized divisions 
+            delivering cutting-edge solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
