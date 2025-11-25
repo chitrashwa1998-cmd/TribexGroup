@@ -28,8 +28,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Pioneering financial innovation through advanced technology, strategic investments, 
-              and comprehensive wealth management solutions.
+              A diversified holding company pioneering innovation across trading, media, 
+              and venture capital through advanced technology and strategic excellence.
             </p>
             <div className="flex space-x-4">
               <Button

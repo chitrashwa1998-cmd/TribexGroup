@@ -13,12 +13,12 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Financial Innovation
+            Innovation
             <span className="block text-accent">Redefined</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            Tribex Group pioneers advanced financial technologies, algorithmic trading, and strategic investments 
-            across three specialized divisions.
+            TribeX Group is a diversified holding company spanning algorithmic trading, digital media, 
+            and venture capital across three specialized divisions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

@@ -6,11 +6,11 @@ export default function About() {
     <section id="about" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">About Tribex Group</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-6">About TribeX Group</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Founded with a vision to revolutionize financial markets through technology and innovation, 
-            Tribex Group represents the convergence of advanced quantitative methods, strategic investment, 
-            and wealth management excellence.
+            TribeX Group is a diversified holding company built on innovation and excellence. 
+            We operate across algorithmic trading, digital media, and venture capital - 
+            bringing cutting-edge technology and strategic thinking to every industry we enter.
           </p>
         </div>
 
@@ -21,8 +21,8 @@ export default function About() {
             </div>
             <h3 className="text-xl font-semibold text-foreground mb-4">Innovation First</h3>
             <p className="text-muted-foreground">
-              We leverage cutting-edge technology and quantitative methods to stay ahead of market trends 
-              and deliver superior results.
+              We leverage cutting-edge technology and data-driven methods to stay ahead of industry trends 
+              and deliver superior results across all our ventures.
             </p>
           </div>
           
@@ -30,10 +30,10 @@ export default function About() {
             <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <Shield className="h-10 w-10 text-accent" />
             </div>
-            <h3 className="text-xl font-semibold text-foreground mb-4">Risk Management</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-4">Strategic Excellence</h3>
             <p className="text-muted-foreground">
-              Our sophisticated risk management frameworks ensure sustainable growth while protecting 
-              capital across all market conditions.
+              Our strategic frameworks ensure sustainable growth and measured risk-taking 
+              across all our business divisions.
             </p>
           </div>
           
@@ -41,10 +41,10 @@ export default function About() {
             <div className="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <Users className="h-10 w-10 text-green-500" />
             </div>
-            <h3 className="text-xl font-semibold text-foreground mb-4">Client Focused</h3>
+            <h3 className="text-xl font-semibold text-foreground mb-4">Partner Focused</h3>
             <p className="text-muted-foreground">
-              Every strategy we deploy is designed with our clients' long-term success and financial 
-              objectives as the primary focus.
+              Every initiative we undertake is designed with our partners' and clients' 
+              long-term success as the primary focus.
             </p>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function About() {
                 <h4 className="text-2xl font-semibold text-card-foreground mb-2">Chitrashwa R</h4>
                 <p className="text-lg text-primary mb-2 font-medium">Founder and CEO</p>
                 <p className="text-muted-foreground max-w-md mx-auto">
-                  Visionary leader driving financial innovation through advanced technology and strategic investments
+                  Visionary leader driving innovation across trading, media, and investments through technology and strategic excellence
                 </p>
               </div>
             </div>
