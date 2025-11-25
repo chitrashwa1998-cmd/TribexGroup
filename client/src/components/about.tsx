@@ -8,9 +8,9 @@ export default function About() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">About Tribex Group</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Founded with a vision to drive innovation across multiple industries, 
-            Tribex Group represents the convergence of advanced financial technology, creative media excellence, 
-            and strategic venture investments.
+            Founded with a vision to revolutionize financial markets through technology and innovation, 
+            Tribex Group represents the convergence of advanced quantitative methods, strategic investment, 
+            and wealth management excellence.
           </p>
         </div>
 

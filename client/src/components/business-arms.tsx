@@ -17,7 +17,7 @@ export default function BusinessArms() {
           <h2 className="text-4xl font-bold text-foreground mb-6">Three Divisions, One Vision</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Tribex Group operates through three specialized divisions, each designed to excel in 
-            distinct sectors - from financial technology to creative media and venture investments.
+            distinct areas of financial innovation and investment management.
           </p>
         </div>
 
