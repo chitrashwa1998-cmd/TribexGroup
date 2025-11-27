@@ -47,8 +47,8 @@ export default function BusinessArms() {
           {/* Tribex Media Card */}
           <Card className="bg-card border border-border hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-8">
-              <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
-                <Megaphone className="h-8 w-8 text-accent" />
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                <Megaphone className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-2xl font-semibold text-card-foreground mb-4">Tribex Media</h3>
               <p className="text-muted-foreground mb-6">
@@ -58,7 +58,7 @@ export default function BusinessArms() {
               <Button
                 variant="ghost"
                 onClick={() => scrollToSection("media")}
-                className="text-accent font-semibold hover:underline p-0 h-auto"
+                className="text-primary font-semibold hover:underline p-0 h-auto"
                 data-testid="button-learn-more-media"
               >
                 Learn More <ArrowRight className="ml-2 h-4 w-4" />

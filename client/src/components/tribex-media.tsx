@@ -1,4 +1,5 @@
 import { Megaphone, Check } from "lucide-react";
+import mediaImage from "@assets/stock_images/content_creation_vid_b49566ab.jpg";
 
 export default function TribexMedia() {
   return (
@@ -6,7 +7,7 @@ export default function TribexMedia() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-flex items-center px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-6">
               <Megaphone className="mr-2 h-4 w-4" />
               Digital Media Services
             </div>
@@ -18,7 +19,7 @@ export default function TribexMedia() {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1 mr-4">
+                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1 mr-4">
                   <Check className="h-3 w-3 text-white" />
                 </div>
                 <div>
@@ -28,7 +29,7 @@ export default function TribexMedia() {
               </div>
               
               <div className="flex items-start">
-                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1 mr-4">
+                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1 mr-4">
                   <Check className="h-3 w-3 text-white" />
                 </div>
                 <div>
@@ -38,7 +39,7 @@ export default function TribexMedia() {
               </div>
               
               <div className="flex items-start">
-                <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1 mr-4">
+                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1 mr-4">
                   <Check className="h-3 w-3 text-white" />
                 </div>
                 <div>
@@ -51,8 +52,8 @@ export default function TribexMedia() {
           
           <div className="bg-card border border-border rounded-xl p-6 shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
-              alt="Modern media and content creation workspace" 
+              src={mediaImage}
+              alt="Professional content creation and video production studio" 
               className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
