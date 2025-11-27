@@ -128,7 +128,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-border pt-8 mt-8 text-center text-muted-foreground">
-          <p>&copy; 2025 Tribex Group. All rights reserved.</p>
+          <p>&copy; 2024 Tribex Group. All rights reserved.</p>
         </div>
       </div>
     </footer>
