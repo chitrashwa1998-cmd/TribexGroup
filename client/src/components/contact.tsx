@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Linkedin, Twitter, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Contact() {
@@ -60,17 +60,9 @@ export default function Contact() {
                   variant="ghost"
                   size="icon"
                   className="w-12 h-12 bg-primary/10 rounded-lg text-primary hover:bg-primary hover:text-white transition-colors"
-                  data-testid="link-twitter"
+                  data-testid="link-instagram"
                 >
-                  <Twitter className="h-6 w-6" />
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="w-12 h-12 bg-primary/10 rounded-lg text-primary hover:bg-primary hover:text-white transition-colors"
-                  data-testid="link-youtube"
-                >
-                  <Youtube className="h-6 w-6" />
+                  <Instagram className="h-6 w-6" />
                 </Button>
               </div>
             </div>

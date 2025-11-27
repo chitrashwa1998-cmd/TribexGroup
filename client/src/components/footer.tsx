@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Youtube } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Footer() {
@@ -44,17 +44,9 @@ export default function Footer() {
                 variant="ghost"
                 size="icon"
                 className="text-muted-foreground hover:text-primary transition-colors"
-                data-testid="footer-twitter"
+                data-testid="footer-instagram"
               >
-                <Twitter className="h-5 w-5" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                data-testid="footer-youtube"
-              >
-                <Youtube className="h-5 w-5" />
+                <Instagram className="h-5 w-5" />
               </Button>
             </div>
           </div>
