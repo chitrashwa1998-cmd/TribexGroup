@@ -1,4 +1,4 @@
-import { TrendingUp, Coins, Rocket, ArrowRight } from "lucide-react";
+import { TrendingUp, Video, Rocket, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -48,7 +48,7 @@ export default function BusinessArms() {
           <Card className="bg-card border border-border hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
-                <Coins className="h-8 w-8 text-accent" />
+                <Video className="h-8 w-8 text-accent" />
               </div>
               <h3 className="text-2xl font-semibold text-card-foreground mb-4">Tribex Media</h3>
               <p className="text-muted-foreground mb-6">

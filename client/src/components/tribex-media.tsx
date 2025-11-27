@@ -1,5 +1,5 @@
 
-import { Clock, Star } from "lucide-react";
+import { Video, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function TribexMedia() {
@@ -9,7 +9,7 @@ export default function TribexMedia() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">
-              <Clock className="mr-2 h-4 w-4" />
+              <Video className="mr-2 h-4 w-4" />
               Coming Soon
             </div>
             <h2 className="text-4xl font-bold text-foreground mb-6">Tribex Media</h2>
