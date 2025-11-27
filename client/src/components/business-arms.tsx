@@ -1,4 +1,4 @@
-import { TrendingUp, Film, Rocket, ArrowRight } from "lucide-react";
+import { TrendingUp, Megaphone, Rocket, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -48,16 +48,21 @@ export default function BusinessArms() {
           <Card className="bg-card border border-border hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
-                <Film className="h-8 w-8 text-accent" />
+                <Megaphone className="h-8 w-8 text-accent" />
               </div>
               <h3 className="text-2xl font-semibold text-card-foreground mb-4">Tribex Media</h3>
               <p className="text-muted-foreground mb-6">
                 Professional content creation, digital marketing, and brand storytelling services 
                 for businesses looking to enhance their digital presence.
               </p>
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-accent/20 text-accent font-medium">
-                Upcoming
-              </div>
+              <Button
+                variant="ghost"
+                onClick={() => scrollToSection("media")}
+                className="text-accent font-semibold hover:underline p-0 h-auto"
+                data-testid="button-learn-more-media"
+              >
+                Learn More <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </CardContent>
           </Card>
 
