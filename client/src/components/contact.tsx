@@ -40,7 +40,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-card-foreground mb-2">Email</h4>
-                  <p className="text-muted-foreground">chitrashwa1998@gmail.com</p>
+                  <p className="text-muted-foreground">tribex@tribexgroup.in</p>
                 </div>
               </div>
             </div>
