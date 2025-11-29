@@ -106,13 +106,11 @@ export default function Footer() {
                 </button>
               </li>
               <li>
-                <button className="text-muted-foreground hover:text-primary transition-colors">
+                <button 
+                  onClick={() => window.open('/privacy-policy', '_blank')}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Privacy Policy
-                </button>
-              </li>
-              <li>
-                <button className="text-muted-foreground hover:text-primary transition-colors">
-                  Terms of Service
                 </button>
               </li>
             </ul>
