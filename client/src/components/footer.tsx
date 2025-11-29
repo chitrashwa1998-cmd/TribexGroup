@@ -107,12 +107,12 @@ export default function Footer() {
               </li>
               <li>
                 <button className="text-muted-foreground hover:text-primary transition-colors">
-                  Careers
+                  Privacy Policy
                 </button>
               </li>
               <li>
                 <button className="text-muted-foreground hover:text-primary transition-colors">
-                  Privacy Policy
+                  Terms of Service
                 </button>
               </li>
             </ul>
