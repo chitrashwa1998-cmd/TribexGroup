@@ -1,14 +1,10 @@
-import { TrendingUp, Palette, Rocket, ArrowRight } from "lucide-react";
+import { TrendingUp, Palette, Rocket, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function BusinessArms() {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
+  const alphaUrl = "#"; // TODO: Replace with actual Tribex Alpha website URL
+  const mediaUrl = "#"; // TODO: Replace with actual Tribex Media website URL
 
   return (
     <section className="py-20 bg-background">
@@ -35,11 +31,13 @@ export default function BusinessArms() {
               </p>
               <Button
                 variant="ghost"
-                onClick={() => scrollToSection("alpha")}
+                asChild
                 className="text-primary font-semibold hover:underline p-0 h-auto"
-                data-testid="button-learn-more-alpha"
+                data-testid="button-visit-alpha"
               >
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                <a href={alphaUrl} target="_blank" rel="noopener noreferrer">
+                  Visit Now <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
               </Button>
             </CardContent>
           </Card>
@@ -57,11 +55,13 @@ export default function BusinessArms() {
               </p>
               <Button
                 variant="ghost"
-                onClick={() => scrollToSection("media")}
+                asChild
                 className="text-primary font-semibold hover:underline p-0 h-auto"
-                data-testid="button-learn-more-media"
+                data-testid="button-visit-media"
               >
-                Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                <a href={mediaUrl} target="_blank" rel="noopener noreferrer">
+                  Visit Now <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
               </Button>
             </CardContent>
           </Card>
