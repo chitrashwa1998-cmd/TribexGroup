@@ -36,7 +36,7 @@ export default function TribexMedia() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-2">Visual Design & Identity</h4>
-                  <p className="text-muted-foreground">Cohesive visual branding including logos, color systems, and design assets that define your professional image.</p>
+                  <p className="text-muted-foreground">Cohesive visual branding including color systems, typography, and design assets that define your professional image.</p>
                 </div>
               </div>
               
