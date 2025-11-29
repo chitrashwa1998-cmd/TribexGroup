@@ -1,4 +1,4 @@
-import { Megaphone, Check } from "lucide-react";
+import { Palette, Check } from "lucide-react";
 import mediaImage from "@assets/stock_images/content_creation_vid_b49566ab.jpg";
 
 export default function TribexMedia() {
@@ -8,13 +8,15 @@ export default function TribexMedia() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-6">
-              <Megaphone className="mr-2 h-4 w-4" />
-              Digital Media Services
+              <Palette className="mr-2 h-4 w-4" />
+              Creative & Digital Brand-Building
             </div>
             <h2 className="text-4xl font-bold text-foreground mb-6">Tribex Media</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Our media division delivers cutting-edge content creation, digital marketing, and brand storytelling 
-              services for businesses looking to amplify their presence in the digital landscape.
+              We specialize in helping individuals and businesses build their online identity through premium 
+              personal branding websites, visual design, and digital presence solutions. Our focus is to transform 
+              creators, professionals, and brands into powerful online personalities through modern design, 
+              storytelling, and digital experiences.
             </p>
             
             <div className="space-y-6">
@@ -23,8 +25,8 @@ export default function TribexMedia() {
                   <Check className="h-3 w-3 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Content Creation</h4>
-                  <p className="text-muted-foreground">High-quality video, photography, and multimedia content tailored to your brand identity.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Personal Branding Websites</h4>
+                  <p className="text-muted-foreground">Premium, custom-designed websites that showcase your unique identity and help you stand out in the digital landscape.</p>
                 </div>
               </div>
               
@@ -33,8 +35,8 @@ export default function TribexMedia() {
                   <Check className="h-3 w-3 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Digital Marketing</h4>
-                  <p className="text-muted-foreground">Strategic campaigns across social media, SEO, and digital advertising platforms.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Visual Design & Identity</h4>
+                  <p className="text-muted-foreground">Cohesive visual branding including logos, color systems, and design assets that define your professional image.</p>
                 </div>
               </div>
               
@@ -43,8 +45,8 @@ export default function TribexMedia() {
                   <Check className="h-3 w-3 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Brand Strategy</h4>
-                  <p className="text-muted-foreground">Comprehensive brand development and storytelling to connect with your target audience.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Digital Presence Solutions</h4>
+                  <p className="text-muted-foreground">End-to-end digital experiences that transform creators, professionals, and brands into powerful online personalities.</p>
                 </div>
               </div>
             </div>
