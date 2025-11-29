@@ -1,4 +1,4 @@
-import { TrendingUp, Megaphone, Rocket, ArrowRight } from "lucide-react";
+import { TrendingUp, Palette, Rocket, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -48,12 +48,12 @@ export default function BusinessArms() {
           <Card className="bg-card border border-border hover:shadow-xl transition-shadow duration-300">
             <CardContent className="p-8">
               <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                <Megaphone className="h-8 w-8 text-primary" />
+                <Palette className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-2xl font-semibold text-card-foreground mb-4">Tribex Media</h3>
               <p className="text-muted-foreground mb-6">
-                Professional content creation, digital marketing, and brand storytelling services 
-                for businesses looking to enhance their digital presence.
+                Premium personal branding websites, visual design, and digital presence solutions 
+                to transform creators and professionals into powerful online personalities.
               </p>
               <Button
                 variant="ghost"
