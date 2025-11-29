@@ -1,6 +1,6 @@
 import { Palette, Check, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import mediaImage from "@assets/stock_images/modern_website_desig_6eafd527.jpg";
+import mediaImage from "@assets/Small_team_collaborating_on_web_design_and_branding_projects_1764446539472.png";
 
 export default function TribexMedia() {
   const mediaUrl = "#"; // TODO: Replace with actual Tribex Media website URL
@@ -66,7 +66,7 @@ export default function TribexMedia() {
           <div className="bg-card border border-border rounded-xl p-6 shadow-2xl">
             <img 
               src={mediaImage}
-              alt="Modern website design on laptop in creative workspace" 
+              alt="Team collaborating on web design and branding projects" 
               className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
