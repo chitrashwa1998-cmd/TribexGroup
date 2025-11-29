@@ -1,6 +1,9 @@
-import { Bot, Check } from "lucide-react";
+import { Bot, Check, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function TribexAlpha() {
+  const alphaUrl = "#"; // TODO: Replace with actual Tribex Alpha website URL
+
   return (
     <section id="alpha" className="py-20 bg-secondary/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,6 +49,14 @@ export default function TribexAlpha() {
                   <p className="text-muted-foreground">Advanced risk controls and portfolio optimization algorithms for consistent performance.</p>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-8">
+              <Button asChild className="bg-primary hover:bg-primary/90" data-testid="button-visit-alpha-section">
+                <a href={alphaUrl} target="_blank" rel="noopener noreferrer">
+                  Visit Now <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
             </div>
           </div>
           

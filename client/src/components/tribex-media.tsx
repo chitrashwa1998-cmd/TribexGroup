@@ -1,7 +1,10 @@
-import { Palette, Check } from "lucide-react";
+import { Palette, Check, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import mediaImage from "@assets/stock_images/content_creation_vid_b49566ab.jpg";
 
 export default function TribexMedia() {
+  const mediaUrl = "#"; // TODO: Replace with actual Tribex Media website URL
+
   return (
     <section id="media" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,6 +52,14 @@ export default function TribexMedia() {
                   <p className="text-muted-foreground">End-to-end digital experiences that transform creators, professionals, and brands into powerful online personalities.</p>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-8">
+              <Button asChild className="bg-primary hover:bg-primary/90" data-testid="button-visit-media-section">
+                <a href={mediaUrl} target="_blank" rel="noopener noreferrer">
+                  Visit Now <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
             </div>
           </div>
           
