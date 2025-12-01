@@ -61,7 +61,7 @@ export default function About() {
                 <h4 className="text-2xl font-semibold text-card-foreground mb-2">Chitrashwa R</h4>
                 <p className="text-lg text-primary mb-2 font-medium">Founder and CEO</p>
                 <p className="text-muted-foreground max-w-md mx-auto">
-                  Visionary leader driving innovation across trading, media, and investments through technology and strategic excellence
+                  Leading Tribex Group's vision across trading, media, and investments with a focus on technology-driven growth.
                 </p>
               </div>
             </div>
