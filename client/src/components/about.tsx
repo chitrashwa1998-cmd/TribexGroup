@@ -53,7 +53,7 @@ export default function About() {
         <Card className="bg-card border border-border rounded-2xl">
           <CardContent className="p-12">
             <h3 className="text-3xl font-bold text-card-foreground text-center mb-12">Leadership</h3>
-            <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 gap-12">
               <div className="text-center">
                 <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
                   <span className="text-4xl font-bold text-white">CR</span>
@@ -62,6 +62,16 @@ export default function About() {
                 <p className="text-lg text-primary mb-2 font-medium">Founder and CEO</p>
                 <p className="text-muted-foreground max-w-md mx-auto">
                   Leading Tribex Group's vision across trading, media, and investments with a focus on technology-driven growth.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-accent to-primary rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
+                  <span className="text-4xl font-bold text-white">CD</span>
+                </div>
+                <h4 className="text-2xl font-semibold text-card-foreground mb-2">Chitya Dyotha R</h4>
+                <p className="text-lg text-primary mb-2 font-medium">Strategic Advisor</p>
+                <p className="text-muted-foreground max-w-md mx-auto">
+                  With an MS in Data Science from the US, she contributes her expertise in analytics, machine learning, and strategy to strengthen Tribex Group's technology vision and data initiatives.
                 </p>
               </div>
             </div>
