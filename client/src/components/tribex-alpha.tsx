@@ -2,7 +2,7 @@ import { Bot, Check, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function TribexAlpha() {
-  const alphaUrl = "#"; // TODO: Replace with actual Tribex Alpha website URL
+  const alphaUrl = "https://www.tribex.club/";
 
   return (
     <section id="alpha" className="py-20 bg-secondary/50">

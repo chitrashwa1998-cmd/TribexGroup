@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import mediaImage from "@assets/Small_team_collaborating_on_web_design_and_branding_projects_1764446539472.png";
 
 export default function TribexMedia() {
-  const mediaUrl = "#"; // TODO: Replace with actual Tribex Media website URL
+  const mediaUrl = "https://tribexmedia.netlify.app/";
 
   return (
     <section id="media" className="py-20 bg-background">

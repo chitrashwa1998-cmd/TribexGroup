@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function BusinessArms() {
-  const alphaUrl = "#"; // TODO: Replace with actual Tribex Alpha website URL
-  const mediaUrl = "#"; // TODO: Replace with actual Tribex Media website URL
+  const alphaUrl = "https://www.tribex.club/";
+  const mediaUrl = "https://tribexmedia.netlify.app/";
 
   return (
     <section className="py-20 bg-background">
