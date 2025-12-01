@@ -45,8 +45,11 @@ export default function Footer() {
                 size="icon"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 data-testid="footer-instagram"
+                asChild
               >
-                <Instagram className="h-5 w-5" />
+                <a href="https://www.instagram.com/tribex.group?igsh=OHoydW01YWE4Njd4" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>

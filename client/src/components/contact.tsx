@@ -61,8 +61,11 @@ export default function Contact() {
                   size="icon"
                   className="w-12 h-12 bg-primary/10 rounded-lg text-primary hover:bg-primary hover:text-white transition-colors"
                   data-testid="link-instagram"
+                  asChild
                 >
-                  <Instagram className="h-6 w-6" />
+                  <a href="https://www.instagram.com/tribex.group?igsh=OHoydW01YWE4Njd4" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="h-6 w-6" />
+                  </a>
                 </Button>
               </div>
             </div>
