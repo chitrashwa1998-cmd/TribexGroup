@@ -78,7 +78,7 @@ export default function BusinessArms() {
                 fintech, and innovative business models. Launching soon.
               </p>
               <div className="inline-flex items-center px-3 py-1 rounded-full bg-accent/20 text-accent font-medium">
-                Coming Soon
+                Upcoming
               </div>
             </CardContent>
           </Card>
