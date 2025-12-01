@@ -17,8 +17,7 @@ export default function Hero() {
             <span className="block text-accent">Redefined</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-            TribeX Group is a diversified holding company spanning algorithmic trading, digital media, 
-            and venture capital across three specialized divisions.
+            TribeX Group is a diversified holding company with specialized divisions in algorithmic trading and digital media, and an upcoming venture capital arm.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
