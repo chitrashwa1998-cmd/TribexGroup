@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribex Group - Financial Innovation & Investment Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          borderRadius: {
+            lg: "var(--radius)",
+            md: "calc(var(--radius) - 2px)",
+            sm: "calc(var(--radius) - 4px)",
+          },
+          colors: {
+            background: "var(--background)",
+            foreground: "var(--foreground)",
+            card: {
+              DEFAULT: "var(--card)",
+              foreground: "var(--card-foreground)",
+            },
+            popover: {
+              DEFAULT: "var(--popover)",
+              foreground: "var(--popover-foreground)",
+            },
+            primary: {
+              DEFAULT: "var(--primary)",
+              foreground: "var(--primary-foreground)",
+            },
+            secondary: {
+              DEFAULT: "var(--secondary)",
+              foreground: "var(--secondary-foreground)",
+            },
+            muted: {
+              DEFAULT: "var(--muted)",
+              foreground: "var(--muted-foreground)",
+            },
+            accent: {
+              DEFAULT: "var(--accent)",
+              foreground: "var(--accent-foreground)",
+            },
+            destructive: {
+              DEFAULT: "var(--destructive)",
+              foreground: "var(--destructive-foreground)",
+            },
+            border: "var(--border)",
+            input: "var(--input)",
+            ring: "var(--ring)",
+          },
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+          }
+        },
+      }
+    };
+    </script>
+    <style>
+        :root {
+            --background: hsl(222 84% 5%);
+            --foreground: hsl(210 40% 98%);
+            --card: hsl(222 84% 8%);
+            --card-foreground: hsl(210 40% 98%);
+            --popover: hsl(222 84% 8%);
+            --popover-foreground: hsl(210 40% 98%);
+            --primary: hsl(221 83% 53%);
+            --primary-foreground: hsl(210 40% 98%);
+            --secondary: hsl(215 28% 17%);
+            --secondary-foreground: hsl(210 40% 98%);
+            --muted: hsl(215 28% 17%);
+            --muted-foreground: hsl(217 32% 58%);
+            --accent: hsl(38 92% 50%);
+            --accent-foreground: hsl(222 84% 5%);
+            --destructive: hsl(0 62% 30%);
+            --destructive-foreground: hsl(210 40% 98%);
+            --border: hsl(215 28% 17%);
+            --input: hsl(215 28% 17%);
+            --ring: hsl(221 83% 53%);
+            --radius: 8px;
+        }
+        
+        .light {
+            --background: hsl(0 0% 100%);
+            --foreground: hsl(222 84% 5%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(222 84% 5%);
+            --popover: hsl(0 0% 100%);
+            --popover-foreground: hsl(222 84% 5%);
+            --primary: hsl(221 83% 53%);
+            --primary-foreground: hsl(210 40% 98%);
+            --secondary: hsl(210 40% 96%);
+            --secondary-foreground: hsl(222 84% 5%);
+            --muted: hsl(210 40% 96%);
+            --muted-foreground: hsl(215 16% 47%);
+            --accent: hsl(38 92% 50%);
+            --accent-foreground: hsl(222 84% 5%);
+            --destructive: hsl(0 84% 60%);
+            --destructive-foreground: hsl(210 40% 98%);
+            --border: hsl(214 32% 91%);
+            --input: hsl(214 32% 91%);
+            --ring: hsl(221 83% 53%);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-background text-foreground font-sans light">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- @COMPONENT: Logo -->
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-primary">
+                        <span class="text-accent">T</span>ribex
+                    </div>
+                </div>
+                <!-- @END_COMPONENT: Logo -->
+
+                <!-- @COMPONENT: Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-foreground hover:text-primary transition-colors duration-200">Home</a>
+                    <a href="#alpha" class="text-foreground hover:text-primary transition-colors duration-200">Tribex Alpha</a>
+                    <a href="#wealth" class="text-foreground hover:text-primary transition-colors duration-200">Tribex Wealth</a>
+                    <a href="#capital" class="text-foreground hover:text-primary transition-colors duration-200">Tribex Capital</a>
+                    <a href="#about" class="text-foreground hover:text-primary transition-colors duration-200">About</a>
+                    <a href="#contact" class="text-foreground hover:text-primary transition-colors duration-200">Contact</a>
+                </div>
+                <!-- @END_COMPONENT: Desktop Navigation -->
+
+                <!-- @COMPONENT: Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-foreground hover:text-primary" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+                <!-- @END_COMPONENT: Mobile Menu Button -->
+            </div>
+        </div>
+
+        <!-- @COMPONENT: Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-background border-b border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-foreground hover:text-primary transition-colors">Home</a>
+                <a href="#alpha" class="block px-3 py-2 text-foreground hover:text-primary transition-colors">Tribex Alpha</a>
+                <a href="#wealth" class="block px-3 py-2 text-foreground hover:text-primary transition-colors">Tribex Wealth</a>
+                <a href="#capital" class="block px-3 py-2 text-foreground hover:text-primary transition-colors">Tribex Capital</a>
+                <a href="#about" class="block px-3 py-2 text-foreground hover:text-primary transition-colors">About</a>
+                <a href="#contact" class="block px-3 py-2 text-foreground hover:text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: Mobile Menu -->
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 min-h-screen flex items-center gradient-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                    Financial Innovation
+                    <span class="block text-accent">Redefined</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
+                    Tribex Group pioneers advanced financial technologies, algorithmic trading, and strategic investments 
+                    across three specialized divisions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-primary hover:bg-white/90 px-8 py-4 rounded-lg font-semibold transition-colors duration-200">
+                        Explore Our Services
+                    </button>
+                    <button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-200">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Overview -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-foreground mb-6">Three Divisions, One Vision</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Tribex Group operates through three specialized divisions, each designed to excel in 
+                    distinct areas of financial innovation and investment management.
+                </p>
+            </div>
+
+            <!-- @COMPONENT: Business Arms Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tribex Alpha Card -->
+                <div class="bg-card border border-border rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-card-foreground mb-4">Tribex Alpha</h3>
+                    <p class="text-muted-foreground mb-6">
+                        Advanced algorithmic trading using machine learning models for 200+ liquid derivatives 
+                        in NSE and BSE markets.
+                    </p>
+                    <button class="text-primary font-semibold hover:underline flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Tribex Wealth Card -->
+                <div class="bg-card border border-border rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-accent/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-coins text-3xl text-accent"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-card-foreground mb-4">Tribex Wealth</h3>
+                    <p class="text-muted-foreground mb-6">
+                        Comprehensive asset management services designed for sophisticated investors. 
+                        Launching soon with cutting-edge portfolio strategies.
+                    </p>
+                    <div class="inline-flex items-center px-3 py-1 rounded-full bg-accent/20 text-accent font-medium">
+                        Coming Soon
+                    </div>
+                </div>
+
+                <!-- Tribex Capital Card -->
+                <div class="bg-card border border-border rounded-xl p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-green-500/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-3xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-card-foreground mb-4">Tribex Capital</h3>
+                    <p class="text-muted-foreground mb-6">
+                        Strategic venture capital investments in promising startups across technology, 
+                        fintech, and innovative business models.
+                    </p>
+                    <button class="text-primary font-semibold hover:underline flex items-center">
+                        View Portfolio <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- @END_COMPONENT: Business Arms Grid -->
+        </div>
+    </section>
+
+    <!-- Tribex Alpha Section -->
+    <section id="alpha" class="py-20 bg-secondary/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-6">
+                        <i class="fas fa-robot mr-2"></i>
+                        AI-Powered Trading
+                    </div>
+                    <h2 class="text-4xl font-bold text-foreground mb-6">Tribex Alpha</h2>
+                    <p class="text-xl text-muted-foreground mb-8">
+                        Our quantitative trading division leverages advanced machine learning algorithms to identify 
+                        and execute trades across 200+ liquid financial instruments in Indian derivative markets.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1 mr-4">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground mb-2">NSE & BSE Derivatives</h4>
+                                <p class="text-muted-foreground">Complete coverage of liquid derivatives markets with real-time execution capabilities.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1 mr-4">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground mb-2">ML-Driven Signals</h4>
+                                <p class="text-muted-foreground">Sophisticated prediction models analyzing market patterns and generating trading signals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1 mr-4">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground mb-2">Risk Management</h4>
+                                <p class="text-muted-foreground">Advanced risk controls and portfolio optimization algorithms for consistent performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trading dashboard mockup with candlestick chart visualization -->
+                <div class="bg-card border border-border rounded-xl p-6 shadow-2xl">
+                    <!-- A modern financial trading dashboard showing candlestick charts and market data -->
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Financial trading dashboard with charts and analytics" 
+                         class="rounded-lg shadow-lg w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tribex Wealth Section -->
+    <section id="wealth" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Luxury wealth management office with modern interiors -->
+                <div class="bg-card border border-border rounded-xl p-6 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1554774853-719586f82d77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Modern luxury office space representing wealth management services" 
+                         class="rounded-lg shadow-lg w-full h-auto" />
+                </div>
+                
+                <div>
+                    <div class="inline-flex items-center px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">
+                        <i class="fas fa-hourglass-half mr-2"></i>
+                        Coming Soon
+                    </div>
+                    <h2 class="text-4xl font-bold text-foreground mb-6">Tribex Wealth</h2>
+                    <p class="text-xl text-muted-foreground mb-8">
+                        Our wealth management division will offer sophisticated portfolio management and investment 
+                        advisory services for high-net-worth individuals and institutional clients.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1 mr-4">
+                                <i class="fas fa-star text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground mb-2">Portfolio Management</h4>
+                                <p class="text-muted-foreground">Customized investment strategies tailored to individual risk profiles and objectives.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1 mr-4">
+                                <i class="fas fa-star text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground mb-2">Alternative Investments</h4>
+                                <p class="text-muted-foreground">Access to exclusive investment opportunities in private markets and alternative assets.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1 mr-4">
+                                <i class="fas fa-star text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground mb-2">Family Office Services</h4>
+                                <p class="text-muted-foreground">Comprehensive wealth planning, tax optimization, and legacy management solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <button class="bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors">
+                            Get Notified at Launch
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tribex Capital Section -->
+    <section id="capital" class="py-20 bg-secondary/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center px-4 py-2 bg-green-500/20 text-green-500 rounded-full text-sm font-medium mb-6">
+                        <i class="fas fa-seedling mr-2"></i>
+                        Venture Capital
+                    </div>
+                    <h2 class="text-4xl font-bold text-foreground mb-6">Tribex Capital</h2>
+                    <p class="text-xl text-muted-foreground mb-8">
+                        Our venture capital arm focuses on identifying and nurturing promising startups across 
+                        technology, fintech, and innovative business models with high growth potential.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="bg-card border border-border rounded-lg p-6">
+                            <div class="text-3xl font-bold text-green-500 mb-2">₹50Cr+</div>
+                            <div class="text-sm text-muted-foreground">Assets Under Management</div>
+                        </div>
+                        
+                        <div class="bg-card border border-border rounded-lg p-6">
+                            <div class="text-3xl font-bold text-green-500 mb-2">25+</div>
+                            <div class="text-sm text-muted-foreground">Portfolio Companies</div>
+                        </div>
+                        
+                        <div class="bg-card border border-border rounded-lg p-6">
+                            <div class="text-3xl font-bold text-green-500 mb-2">3x</div>
+                            <div class="text-sm text-muted-foreground">Average Return Multiple</div>
+                        </div>
+                        
+                        <div class="bg-card border border-border rounded-lg p-6">
+                            <div class="text-3xl font-bold text-green-500 mb-2">5</div>
+                            <div class="text-sm text-muted-foreground">Successful Exits</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <button class="bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors mr-4">
+                            View Portfolio
+                        </button>
+                        <button class="border border-border text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition-colors">
+                            Submit Pitch Deck
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Modern startup office environment with entrepreneurs working -->
+                <div class="bg-card border border-border rounded-xl p-6 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Modern startup office with entrepreneurs collaborating on innovative projects" 
+                         class="rounded-lg shadow-lg w-full h-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-foreground mb-6">About Tribex Group</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Founded with a vision to revolutionize financial markets through technology and innovation, 
+                    Tribex Group represents the convergence of advanced quantitative methods, strategic investment, 
+                    and wealth management excellence.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-foreground mb-4">Innovation First</h3>
+                    <p class="text-muted-foreground">
+                        We leverage cutting-edge technology and quantitative methods to stay ahead of market trends 
+                        and deliver superior results.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-foreground mb-4">Risk Management</h3>
+                    <p class="text-muted-foreground">
+                        Our sophisticated risk management frameworks ensure sustainable growth while protecting 
+                        capital across all market conditions.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-3xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-foreground mb-4">Client Focused</h3>
+                    <p class="text-muted-foreground">
+                        Every strategy we deploy is designed with our clients' long-term success and financial 
+                        objectives as the primary focus.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Leadership Team -->
+            <div class="bg-card border border-border rounded-2xl p-12">
+                <h3 class="text-3xl font-bold text-card-foreground text-center mb-12">Leadership Team</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <!-- Professional headshot of a financial executive in business attire -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300" 
+                             alt="Professional headshot of CEO" 
+                             class="w-32 h-32 rounded-full mx-auto mb-6 object-cover" />
+                        <h4 class="text-xl font-semibold text-card-foreground mb-2">John Smith</h4>
+                        <p class="text-muted-foreground mb-2">Chief Executive Officer</p>
+                        <p class="text-sm text-muted-foreground">15+ years in quantitative finance and algorithmic trading</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <!-- Professional headshot of a female financial technology leader -->
+                        <img src="https://pixabay.com/get/g9e687a0f4414a836db26f24e0cf4fe9c3f90aa977c03ae655dfa74829ad3120ea9a5bcfe9863ca1f8330f0ebf45ed0a42b93cec7e10e87427e1e29cc80ec6174_1280.jpg" 
+                             alt="Professional headshot of CTO" 
+                             class="w-32 h-32 rounded-full mx-auto mb-6 object-cover" />
+                        <h4 class="text-xl font-semibold text-card-foreground mb-2">Sarah Johnson</h4>
+                        <p class="text-muted-foreground mb-2">Chief Technology Officer</p>
+                        <p class="text-sm text-muted-foreground">Former ML researcher at top-tier investment banks</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <!-- Professional headshot of an investment professional -->
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300" 
+                             alt="Professional headshot of Chief Investment Officer" 
+                             class="w-32 h-32 rounded-full mx-auto mb-6 object-cover" />
+                        <h4 class="text-xl font-semibold text-card-foreground mb-2">Michael Chen</h4>
+                        <p class="text-muted-foreground mb-2">Chief Investment Officer</p>
+                        <p class="text-sm text-muted-foreground">20+ years in venture capital and private equity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-secondary/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold text-foreground mb-6">Get in Touch</h2>
+                    <p class="text-xl text-muted-foreground mb-8">
+                        Ready to explore partnership opportunities or learn more about our services? 
+                        Connect with our team today.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground">Address</h4>
+                                <p class="text-muted-foreground">123 Financial District, Mumbai, Maharashtra 400001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground">Phone</h4>
+                                <p class="text-muted-foreground">+91 22 1234 5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-foreground">Email</h4>
+                                <p class="text-muted-foreground">info@tribexgroup.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-foreground mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-card border border-border rounded-xl p-8">
+                    <form class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-card-foreground mb-2">First Name</label>
+                                <input type="text" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-card-foreground mb-2">Last Name</label>
+                                <input type="text" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-card-foreground mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-card-foreground mb-2">Company</label>
+                            <input type="text" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-card-foreground mb-2">Interest</label>
+                            <select class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent">
+                                <option>Tribex Alpha Services</option>
+                                <option>Tribex Wealth (Waitlist)</option>
+                                <option>Tribex Capital Investment</option>
+                                <option>Partnership Opportunities</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-card-foreground mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-card border-t border-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="text-2xl font-bold text-primary">
+                            <span class="text-accent">T</span>ribex
+                        </div>
+                    </div>
+                    <p class="text-muted-foreground mb-6 max-w-md">
+                        Pioneering financial innovation through advanced technology, strategic investments, 
+                        and comprehensive wealth management solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-muted-foreground hover:text-primary transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-muted-foreground hover:text-primary transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-muted-foreground hover:text-primary transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-card-foreground mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#alpha" class="text-muted-foreground hover:text-primary transition-colors">Tribex Alpha</a></li>
+                        <li><a href="#wealth" class="text-muted-foreground hover:text-primary transition-colors">Tribex Wealth</a></li>
+                        <li><a href="#capital" class="text-muted-foreground hover:text-primary transition-colors">Tribex Capital</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-card-foreground mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="#contact" class="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-border pt-8 mt-8 text-center text-muted-foreground">
+                <p>&copy; 2024 Tribex Group. All rights reserved. | SEBI Registration: INZ000123456</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        // Mobile menu toggle functionality
+        window.toggleMobileMenu = function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        };
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Form submission handler (placeholder)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // TODO: Implement form submission logic with API integration
+            alert('Thank you for your message. We will get back to you soon!');
+            this.reset();
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-background');
+                nav.classList.remove('bg-background/80');
+            } else {
+                nav.classList.remove('bg-background');
+                nav.classList.add('bg-background/80');
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
