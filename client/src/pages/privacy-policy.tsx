@@ -1,10 +1,10 @@
 
-import { useNavigate } from "wouter";
+import { useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 export default function PrivacyPolicy() {
-  const [, setLocation] = useNavigate();
+  const [, setLocation] = useLocation();
 
   return (
     <div className="min-h-screen bg-background">
