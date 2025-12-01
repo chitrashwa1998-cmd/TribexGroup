@@ -13,8 +13,7 @@ export default function TribexCapital() {
             </div>
             <h2 className="text-4xl font-bold text-foreground mb-6">Tribex Capital</h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Our venture capital division will focus on identifying and nurturing promising startups across 
-              technology, fintech, and innovative business models with high growth potential.
+              A future initiative focused on supporting emerging startups in tech and innovation with early-stage investment and mentorship.
             </p>
             
             <div className="space-y-6">
@@ -23,8 +22,8 @@ export default function TribexCapital() {
                   <Star className="h-3 w-3 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Early Stage Investment</h4>
-                  <p className="text-muted-foreground">Strategic investments in pre-seed and seed rounds for high-potential startups at initial stages.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Early-Stage Focus</h4>
+                  <p className="text-muted-foreground">Targeting pre-seed and seed-stage founders building high-potential products.</p>
                 </div>
               </div>
               
@@ -33,8 +32,8 @@ export default function TribexCapital() {
                   <Star className="h-3 w-3 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Sector Focus</h4>
-                  <p className="text-muted-foreground">Targeting fintech, AI, blockchain, and innovative technology solutions.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Sector Interests</h4>
+                  <p className="text-muted-foreground">Fintech, AI, blockchain, and breakthrough tech solutions.</p>
                 </div>
               </div>
               
@@ -43,8 +42,8 @@ export default function TribexCapital() {
                   <Star className="h-3 w-3 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Value-Added Support</h4>
-                  <p className="text-muted-foreground">Mentorship, networking, and strategic guidance for portfolio companies.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Value Beyond Capital</h4>
+                  <p className="text-muted-foreground">Once launched, Tribex Capital will offer mentorship, network access, and strategic support to help founders grow.</p>
                 </div>
               </div>
             </div>
