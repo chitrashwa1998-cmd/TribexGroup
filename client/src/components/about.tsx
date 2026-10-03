@@ -1,6 +1,7 @@
 import { Lightbulb, Shield, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import founderImg from "../../../attached_assets/founder.png";
+import advisorImg from "../../../attached_assets/advisor.png";
 
 export default function About() {
   return (
@@ -70,8 +71,12 @@ export default function About() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-accent to-primary rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
-                  <span className="text-4xl font-bold text-white">CD</span>
+                <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-6 p-1 overflow-hidden shadow-xl">
+                  <img 
+                     src={advisorImg}
+                     alt="Chitya Dyotha R"
+                     className="w-32 h-32 object-cover rounded-full"
+                     />
                 </div>
                 <h4 className="text-2xl font-semibold text-card-foreground mb-2">Chitya Dyotha R</h4>
                 <p className="text-lg text-primary mb-2 font-medium">Strategic Advisor</p>
