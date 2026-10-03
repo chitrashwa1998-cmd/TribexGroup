@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <p className="text-sm">
-              Last updated: January 2025
+              Last updated: January 2026
             </p>
           </section>
         </div>
