@@ -56,11 +56,11 @@ export default function About() {
             <h3 className="text-3xl font-bold text-card-foreground text-center mb-12">Leadership</h3>
             <div className="grid md:grid-cols-2 gap-12">
               <div className="text-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
+                <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-6 p-1 overflow-hidden shadow-xl">
                   <img 
                      src={founderImg}
                      alt="Chitrashwa R"
-                     className="w-32 h-32 object-cover rounded-full mx-auto mb-6 shadow-xl"
+                     className="w-32 h-32 object-cover rounded-full"
                      /> 
                 </div>
                 <h4 className="text-2xl font-semibold text-card-foreground mb-2">Chitrashwa R</h4>
