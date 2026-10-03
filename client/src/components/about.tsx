@@ -1,5 +1,6 @@
 import { Lightbulb, Shield, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import founderImg from "../../../attached_assets/founder.png";
 
 export default function About() {
   return (
@@ -56,7 +57,8 @@ export default function About() {
             <div className="grid md:grid-cols-2 gap-12">
               <div className="text-center">
                 <div className="w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
-                  <img src="/attached_assets/founder.png"
+                  <img 
+                     src={founderImg}
                      alt="Chitrashwa R"
                      className="w-32 h-32 object-cover rounded-full mx-auto mb-6 shadow-xl"
                      /> 
