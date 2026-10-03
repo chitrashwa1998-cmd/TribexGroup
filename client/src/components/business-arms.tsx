@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function BusinessArms() {
-  const alphaUrl = "https://www.tribex.club/";
+  const alphaUrl = "https://tribexalpha1.onrender.com/";
   const mediaUrl = "https://tribexmedia.netlify.app/";
 
   return (
